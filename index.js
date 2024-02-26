@@ -12,7 +12,7 @@ app.set('views', join(__dirname, '/src/views'))
 
 console.log(join(__dirname, '/src/views'))
 
-app.set('view engine', 'ejs')
+app.set('view engine', '/src/ejs')
 app.use(indexRoutes)
 
 app.use(express.static(join(__dirname, '/src/public')))
