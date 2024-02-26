@@ -9,6 +9,9 @@ const app = express()
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
 app.set('views', join(__dirname, 'views'))
+
+console.log(join(__dirname, 'views'))
+
 app.set('view engine', 'ejs')
 app.use(indexRoutes)
 
