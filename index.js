@@ -12,10 +12,10 @@ app.set('views', join(__dirname, '/src/views'))
 
 console.log(join(__dirname, '/src/views'))
 
-app.set('view engine', '/src/ejs')
+app.set('view engine', 'ejs')
 app.use(indexRoutes)
 
-app.use(express.static(join(__dirname, '/src/public')))
+app.use(express.static(join(__dirname, 'public')))
 
 app.listen(3000)
 console.log('Server is listening on port', 3000)
